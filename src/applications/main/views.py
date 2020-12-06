@@ -1,3 +1,6 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+def view_main(request):
+    payload = render(request, "main/index.html")
+    return payload

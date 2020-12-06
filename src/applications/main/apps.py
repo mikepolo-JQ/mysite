@@ -2,4 +2,5 @@ from django.apps import AppConfig
 
 
 class MainConfig(AppConfig):
-    name = "main"
+    lable = "main"
+    name = f"applications.{lable}"
