@@ -1,7 +1,7 @@
 .PHONY: run
 run:
 	$(call log, starting local web server)
-	$(LOCAL_RUN)
+	$(RUN) python src/manage.py runserver
 
 
 .PHONY: run-prod
