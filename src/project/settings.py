@@ -68,7 +68,7 @@ WSGI_APPLICATION = "project.wsgi.application"
 
 DATABASES = {
     'default': {
-        
+
     }
 }
 
