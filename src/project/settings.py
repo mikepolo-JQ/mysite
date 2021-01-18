@@ -1,7 +1,7 @@
-import os
+
 from pathlib import Path
 
-import dj_database_url
+
 from dynaconf import settings as _ds
 
 DIR_SRC = Path(__file__).resolve().parent.parent
@@ -66,9 +66,12 @@ WSGI_APPLICATION = "project.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-database_url = os.getenv("DATABASE_URL", _ds.DATABASE_URL)
-
-DATABASES = {"default": dj_database_url.parse(database_url)}
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": DIR_SRC / "db.sqlite3",
+    }
+}
 
 
 # Password validation
