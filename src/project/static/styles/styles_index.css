@@ -183,19 +183,16 @@ h1, h2, h3, h4, h5, h6{
 
 .about__block{
     margin: 165px 150px;
-    /*background: url("assets/img/light.png");*/
     display: flex;
     justify-content: space-between;
 }
 
 .about__block img{
     width: 35%;
-    /*height: 100%;*/
+
 }
 
 .about_text_container{
-    /*position: absolute;*/
-
     margin-left: 65px;
 }
 
@@ -320,32 +317,10 @@ h1, h2, h3, h4, h5, h6{
     text-align: center;
 }
 
-/*.educ__space-between{*/
-/*    display: flex;*/
-/*    justify-content: space-between;*/
-/*    max-width: max-content;*/
-/*}*/
-
-/*.education__second_title{*/
-/*    color: #01d2ff;*/
-/*    font-size: 100px;*/
-/*    font-weight: bold;*/
-
-/*    transform: rotate(-90deg);*/
-/*    margin-left: 250px;*/
-/*    margin-top: -90px;*/
-
-/*    opacity: .3;*/
-/*    !*transform-origin: left top 0;*!*/
-/*    !*position: absolute;*!*/
-/*}*/
-
 .no_second_title{
     margin-left: 30%;
     font-size: 120%;
 }
-
-
 
 .educ__block{
     display: flex;
@@ -353,10 +328,6 @@ h1, h2, h3, h4, h5, h6{
     max-width: max-content;
     margin-top: 60px;
 }
-
-/*.educ__block:last-child{*/
-/*    margin-bottom: 120px;*/
-/*}*/
 
 .educ__block img{
     width: 35px;
@@ -577,11 +548,6 @@ h1, h2, h3, h4, h5, h6{
     text-transform: uppercase;
 }
 
-/*.end_ico{*/
-/*    display: flex;*/
-/*    justify-content: space-between;*/
-/*    max-width: max-content;*/
-/*}*/
 .end_ico{
     width: 200px;
     display: flex;
