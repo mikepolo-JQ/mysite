@@ -36,5 +36,6 @@ ci:
 
 
 heroku:
+  HOST: "personal-mikepolo.herokuapp.com"
   MODE_DEBUG: false
   VENV_SYNTHETIC: 1
