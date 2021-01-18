@@ -443,19 +443,6 @@ h1, h2, h3, h4, h5, h6{
 
 }
 
-.contact__input:before{
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto 0;
-    width: 25px;
-    height: 25px;
-    background: url('assets/ico/whiteuser.png') no-repeat;
-    background-size: cover;
-}
-
 .massage_label{
     text-transform: uppercase;
     font-weight: bold;
