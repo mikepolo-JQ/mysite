@@ -20,12 +20,12 @@ jobs:
       PYTHONPATH: src
 
     docker:
-      - image: circleci/python:3.9.0-browsers
+      - image: circleci/python:3.8.5-browsers
         auth:
           username: $DOCKERHUB_USERNAME
           password: $DOCKERHUB_PASSWORD
 
-      - image: circleci/postgres:12.1-alpine
+      - image: circleci/postgres:9.6.9-alpine
         auth:
           username: $DOCKERHUB_USERNAME
           password: $DOCKERHUB_PASSWORD
@@ -40,7 +40,7 @@ jobs:
       - run:
           name: (Waiting for Postgres to be ready)
           command: |
-            make wait-for-db
+            scripts/wait_for_postgresql.sh || exit 1
 
       - postgres/install_postgres_client
 
@@ -72,9 +72,14 @@ jobs:
             - ./selenium.jar
 
       - run:
-          name: Performing release steps
+          name: Preparing DB
           command: |
-            make initdb release
+            make db
+
+      - run:
+          name: Preparing data
+          command: |
+            make data
 
       - run:
           name: (Running Selenium)
